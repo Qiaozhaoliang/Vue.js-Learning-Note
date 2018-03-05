@@ -73,6 +73,13 @@ new Vue({
 v-on 指令，它用于监听 DOM 事件：
 <a v-on:click="doSomething">
 在这里参数是监听的事件名。
+Vue.js 为 v-on 提供了事件修饰符来处理 DOM 事件细节，如：event.preventDefault() 或 event.stopPropagation()。
+Vue.js通过由点(.)表示的指令后缀来调用修饰符。
+.stop
+.prevent
+.capture
+.self
+.once
 
 在 input 输入框中我们可以使用 v-model 指令来实现双向数据绑定：
 <div id="app">
